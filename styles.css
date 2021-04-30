@@ -4,8 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(255, 255, 255);
-    height: 500px;
-    width: 900px;
+  
     align-items: center;
     text-align: center;
 }
@@ -72,8 +71,9 @@ a {
     color: white;
     width: 95px;
     bottom: 50px;
-    min-height: 80px;
-    max-width: 90px;
+    min-height: 100px;
+    max-width: 120px;
+    opacity: 0.5;
   
   }
   

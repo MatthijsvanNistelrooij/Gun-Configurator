@@ -4,8 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(255, 255, 255);
-    height: 500px;
-    width: 900px;
+
     align-items: center;
     text-align: center;
 }
@@ -73,7 +72,9 @@ a {
     bottom: 50px;
     min-height: 80px;
     max-width: 90px;
-  
+    opacity: 0.5;
+
+
   }
   
   .dropup-content a {
