@@ -1,14 +1,14 @@
 .slideContainer{
-  height: 50vh;
+  height: 55vh;
   position: relative;
+  margin-top: 5%;
 }
 
 .mySlides {
   position: absolute;
-  bottom: 20%;
+  bottom: 40%;
   display:none;
   margin-left: 10%;
-  margin-top: 30%;
 
 }
 
@@ -16,18 +16,20 @@
   border: none; 
   float: left;
   height: 100%;
-  width: 20px;
-  background-color: rgb(255, 255, 255);
-  font-size: 23px;
+  width: 60px;
+  background-color: rgb(223, 223, 223, 0.2);
+  font-size: 28px;
+  color: rgb(50, 50, 50);
 }
 
 .plusdivright {
   border: none; 
   float: right;
   height: 100%;
-  width: 20px;
-  background-color: rgb(255, 255, 255);
-  font-size: 23px;
+  width: 60px;
+  background-color: rgb(223, 223, 223, 0.2);
+  font-size: 28px;
+  color: rgb(50, 50, 50);
 }
 
 .plusdivleft2 {
@@ -59,8 +61,9 @@
 
 @media screen and (min-width: 601px) {
   div.font2 {
-    font-size: 18px;
- 
+    font-size: 20px;
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
