@@ -1,14 +1,14 @@
 .slideContainer{
-  height: 450px;
+  height: 50vh;
   position: relative;
 }
 
 .mySlides {
   position: absolute;
-  bottom: 100px;
+  bottom: 20%;
   display:none;
   margin-left: 10%;
-  margin-top: 10%;
+  margin-top: 30%;
 
 }
 
