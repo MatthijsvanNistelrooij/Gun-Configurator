@@ -1,14 +1,17 @@
-function changeImage()
-{
-var img = document.getElementById("image");
-img.src="images/darkgreennoscope.png";
-return false;
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+showDivs(slideIndex += n);
 }
 
-
-function changeImage2()
-{
-var img = document.getElementById("image");
-img.src="images/darkgreenreddot.png";
-return false;
+function showDivs(n) {
+var i;
+var x = document.getElementsByClassName("mySlides");
+if (n > x.length) {slideIndex = 1}
+if (n < 1) {slideIndex = x.length} ;
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";
+}
+x[slideIndex-1].style.display = "block";
 }

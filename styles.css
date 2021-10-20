@@ -1,20 +1,33 @@
+.slideContainer{
+  height: 450px;
+  position: relative;
+}
+
 .mySlides {
+  position: absolute;
+  bottom: 100px;
   display:none;
   margin-left: 10%;
+  margin-top: 10%;
+
 }
 
 .plusdivleft {
   border: none; 
-  margin-bottom: 5%;
   float: left;
-  margin-top: -8%;
+  height: 100%;
+  width: 20px;
+  background-color: rgb(255, 255, 255);
+  font-size: 23px;
 }
 
 .plusdivright {
   border: none; 
-  margin-bottom: 5%;
   float: right;
-  margin-top: -8%;
+  height: 100%;
+  width: 20px;
+  background-color: rgb(255, 255, 255);
+  font-size: 23px;
 }
 
 .plusdivleft2 {

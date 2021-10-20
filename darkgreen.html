@@ -11,105 +11,74 @@
     <title>Gun Configurator</title>
 </head>
 <body>
+  
   <div class="d-flex justify-content-center">
     <a href=""><img src="images/gear.png"style="width:50px; color: orange; margin-right: 20px; margin-top: 15%"></a> 
   </div>
-  
   <hr class="hr1" style="height: 4px;">
-<p style="letter-spacing: 1.2em; color: rgb(153, 153, 153);">BOLT 
+  <p style="letter-spacing: 1.2em; color: rgb(153, 153, 153);">BOLT 
   <span style="color: orange;">
     ACTION RIFLE 
   </span> 
+  R8 CONFIGURATOR</p>   
+</div>
+
+  <div class="container">
+    
+  <div class="slideContainer">
+    <img class="mySlides" src="images/darkgreennoscope.png" style="width:80%;">
+
+    <img class="mySlides" src="images/darkgreenblaser.png" style="width:80%">
+    <img class="mySlides" src="images/darkgreenreddot.png" style="width:80%">
+
   
-  R8 CONFIGURATOR</p>
-
-      
+    <button class="plusdivleft" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="plusdivright" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  
 </div>
 
-<div class="container" style="text-align: center; margin-bottom: 5%; margin-top: 10%; min-height: 250px">
-    <img id="image" src="images/darkgreennoscope.png" style="width: 60%;">
-</div>
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+  
+  </body>
+  </html>
+
+
+
+
+
+
 
 
     <div class="menu">
-      <div class="dropup">
-          <button class="dropbtn">Color
-          </button>
-          <div class="dropup-content">
-              <a href="darkgreen.html">Dark Green</a>
-              <a href="camo.html" >Camo</a>
-              <a href="index.html" >Brown</a>
-              <a href="darkbrown.html" >Dark Brown</a>
-          </div>
-        </div>
-      
-       
-      
-      
-        <div class="dropup">
-          <button class="dropbtn">Barrel</button>
-          <div class="dropup-content">
-            <a href="#">Standard</a>
-            <a href="#">Fluted</a>
-           
-          </div>
-        </div>
-      
-        <div class="dropup">
-          <button class="dropbtn">Magazine</button>
-          <div class="dropup-content">
-            <a href="#">Removable</a>
-            <a href="#">Regular</a>
-          
-          </div>
-        </div>
-      
-        <div class="dropup">
-          <button class="dropbtn">Case</button>
-          <div class="dropup-content">
-            <a href="#">ABS B</a>
-            <a href="#">ABS C</a>
-          
-          </div>
-        </div>
-      
-        <div class="dropup">
-          <button class="dropbtn">Scope</button>
-          <div class="dropup-content">
-            <a href="darkgreen.html">None</a>
-            <a href="darkgreenblaser.html">Blaser</a>
-            <a href="darkgreenreddot.html">Red Dot</a>
-          </div>
-        </div>
-      
-        <div class="dropup">
-          <button class="dropbtn">Trigger</button>
-          <div class="dropup-content">
-              <a href="#">Regular</a>
-              <a href="#">Gold</a>
-            <a href="#">Silver</a>
-            
-          </div>
-        </div>
-      
-        <div class="dropup">
-          <button class="dropbtn">Caliber</button>
-          <div class="dropup-content">
-            <a href="#">.22 l.r.</a>
-            <a href="#">.204 Ruger</a>
-            <a href="#">.222 Rem.</a>
-          </div>
-        </div>
-      
-        <div class="dropup">
-          <button class="dropbtn">Bolt</button>
-          <div class="dropup-content">
-            <a href="#">Standard</a>
-            <a href="#">Wood</a>
-            <a href="#">Steel</a>
-          </div>
-        </div>
-    
+ 
+      <div class="menu">
+
+
+        <a href="index.html" class="btn btn-primary" style="border: 5px solid orange; margin: 20px; background-color: rgb(182, 20, 20); border: none; height: 30px; width: 30px; border-radius: 50px"></a>
+        <a href="darkgreen.html" class="btn btn-primary" style="border: 5px solid orange; margin: 20px; background-color: rgb(29, 104, 16); border: none; height: 30px; width: 30px; border-radius: 50px"></a>
+        <a href="camo.html" class="btn btn-primary" style="border: 5px solid orange; margin: 20px; background-color: rgb(204, 193, 32); border: none; height: 30px; width: 30px; border-radius: 50px"></a>
+        <a href="darkbrown.html" class="btn btn-primary" style="border: 5px solid orange; margin: 20px; background-color: rgb(90, 17, 17); border: none; height: 30px; width: 30px; border-radius: 50px"></a>
+  
+  
     </div>
           
     <hr class="hr1" style="height: 4px;">
