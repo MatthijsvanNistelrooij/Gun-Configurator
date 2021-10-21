@@ -3,40 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+
     <title>Gun Configurator</title>
 </head>
 <body>
 
-<br>
-<div style="letter-spacing: 1.2em; color: rgb(153, 153, 153); text-align: center;" class="font2">
-    <p>BOLT <span style="color: orange;"> ACTION RIFLE R8</span> CONFIGURATOR</p>
-</div>
+<div class="container" style="margin-top: 5%;">
+  
 
-<hr class="hr1" style="height: 4px;">
-
-<div class="container">    
+<div class="card">
+  <div class="card-header" style="padding: 30px;">
+    <div style="letter-spacing: 1.2em; color: rgb(153, 153, 153); text-align: center;" class="font2">
+     BOLT <span style="color: orange;"> ACTION RIFLE R8</span> CONFIGURATOR
+    </div>    
+  </div>
+  <div class="card-body">
+<div class="container">
   <div class="slideContainer">
     <img class="mySlides" src="images/darkbrownnoscope.png">
-    <img class="mySlides" src="images/darkbrownwood.png">
-    <img class="mySlides" src="images/darkbrownsteel.png">
     <img class="mySlides" src="images/darkbrownblaser.png">
     <img class="mySlides" src="images/darkbrownreddot.png">
-    <button class="plusdivleft" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="plusdivright" onclick="plusDivs(1)">&#10095;</button>
+    <img class="mySlides" src="images/darkbrownsteel.png">
+    <img class="mySlides" src="images/darkbrownwood.png">
+    <button class="btn btn-light" style="position: absolute; bottom: 0; left: 10px; width: 47%; border: 1px solid rgb(211, 211, 211)" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="btn btn-light" style="position: absolute; bottom: 0; right: 10px; width: 47%; border: 1px solid rgb(211, 211, 211)" onclick="plusDivs(1)">&#10095;</button>
   </div>
 </div>
-  
-<div class="menu">
+</div>
+<div class="card-footer" style="padding: 30px; text-align: center;">
+
   <a href="index.html" class="subnav" style="background-color: rgba(93, 77, 2, 0.8);"></a>
   <a href="darkgreen.html" class="subnav" style="background-color: rgb(19, 48, 14, 0.8);"></a>
   <a href="camo.html" class="subnav" style="background-color: rgb(162, 165, 14, 0.9);"></a>
   <a href="darkbrown.html" class="subnav" style="background-color: rgb(93, 77, 2);"></a>  
+  <br><br>
 </div>
-      
-<hr class="hr1" style="height: 4px;">
+</div>
+
+</div>
+        
+
 
 <script>
   var slideIndex = 1;
